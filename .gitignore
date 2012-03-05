@@ -1,0 +1,7 @@
+logs/*
+tests/log/*
+.DS_Store
+*.swp
+*~
+.project
+htdocs/acache.php
