@@ -1,0 +1,122 @@
+/* Extension-wide styles */
+
+p,h1,h2,h3,h4,ul,li,ol {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/* CSS Buttons */
+.button {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+  	background: white url('button.png') 0 0 repeat-x; /* Image fallback */
+  	background: -moz-linear-gradient(0% 170% 90deg, #c4c4c4, white);
+  	background: -webkit-gradient(linear, 0% 0%, 0% 170%, from(white), to(#c4c4c4));
+  	border: 1px solid;
+  	border-color: #e6e6e6 #cccccc #cccccc #e6e6e6;
+  	border-radius: 3px;
+  	color: #404040;
+  	display: inline-block;
+  	font-family: "helvetica neue", helvetica, arial, freesans, "liberation sans", "numbus sans l", sans-serif;
+  	font-size: 13px;
+  	outline: 0;
+  	padding: 5px 8px 5px;
+  	text-align: center;
+  	text-decoration: none;
+  	text-shadow: 1px 1px 0 white; 
+  	white-space: nowrap; 
+}
+
+.button:hover {
+	background: -moz-linear-gradient(0% 170% 90deg, #b8b8b8, white);
+	background: -webkit-gradient(linear, 0% 0%, 0% 170%, from(white), to(#b8b8b8));
+	border-color: #99ccff;
+	color: #333333;
+}
+
+.button:active {
+  	position: relative;
+  	top: 1px;
+}
+
+.button:active, .button:focus, .button.selected {
+	background-position: 0 -25px;
+	background: -moz-linear-gradient(0% 170% 90deg, white, #dedede);
+	background: -webkit-gradient(linear, 0% 0%, 0% 170%, from(#dedede), to(white));
+	border-color: #8fc7ff #94c9ff #94c9ff #8fc7ff;
+	color: #1a1a1a;
+	text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.button.selected {
+	border-color: #e6e6e6 #cccccc #cccccc #e6e6e6;
+}
+
+.button.pillbox {
+	position: relative;
+    margin: 0;
+}
+.button.pillbox:hover {
+	z-index: 10; 
+}
+.button.pillbox:active {
+	top: 0; 
+}
+.button.pillbox-l {
+	border-top-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-bottom-right-radius: 0; 
+}
+.button.pillbox-m {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	margin: 0 -4px; 
+}
+.gecko .button.pillbox-m {
+    margin: 0 -4px 0 -3px; 
+}
+.button.pillbox-r {
+	border-top-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+	-webkit-border-bottom-left-radius: 0;
+	margin-right: 20px; 
+}
+
+.button.red {
+	background: -moz-linear-gradient(0% 170% 90deg, red, #bd0000);
+	background: -webkit-gradient(linear, 0% 0%, 0% 170%, from(#bd0000), to(red));
+	text-shadow: 1px 1px 0 #b30000;
+	font-weight: bold;
+	color: white;
+	border-color: #990000 #330000 #330000 #990000;
+	padding: 4px 8px 6px; 
+}
+.opera .button.red, .msie .button.red {
+    background: red; 
+}
+.button.red:hover {
+	border-color: red; 
+}
+.button.red:active, .button.red:focus {
+	text-shadow: 1px -1px 0 #b30000;
+    border-color: #990000 #d60000 #d60000 #990000; 
+}

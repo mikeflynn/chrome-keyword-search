@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Keyword Finder</title>
+
+	<script type="text/javascript" src="lib/Store.js"></script>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+	<script type="text/javascript" src="js/bookmark.js"></script>
+
+	<link href="lib/progress/progress.css" rel="stylesheet" type="text/css" />
+
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/popup.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="ui-progress-bar ui-container" id="progress_bar">
+	<div class="ui-progress" style="width: 0%;">
+		<span class="ui-label" style="display:none;">
+			Loading Resources
+			<b class="value">7%</b>
+		</span>
+	</div>
+</div>
+
+<div id="results">
+	<ul></ul>
+</div>
+
+<div id="export">
+	<a href="#" class="button export_bookmark">Export to bookmarks</a>
+</div>
+
+</body>
+</html>

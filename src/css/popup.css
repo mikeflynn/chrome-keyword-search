@@ -1,0 +1,48 @@
+body {
+	width: 250px;
+}
+
+div#results {
+	margin: 10px 0px 10px 0px;
+}
+
+div#results h4 {
+	padding: 0px 0px 5px 0px;
+}
+
+div#results ul {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	max-height: 359px;
+	overflow-y: scroll;
+}
+
+div#results ul li {
+	padding: 5px 20px 5px 5px;
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+}
+
+div#results ul li.even {
+	background-color: #eee;
+}
+
+div#results ul li span {
+	float: right;
+	font-weight: bold;
+}
+
+div#export {
+	display: none;
+	margin: 10px 0px 0px 0px;
+	padding: 5px 0px 0px 0px;
+	border-top: 1px solid #ccc;
+	text-align: right;
+	font-size: 10px;
+}
+
+div#export a.button {
+	font-size: 10px;
+}

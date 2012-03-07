@@ -1,0 +1,17 @@
+.kw__highlight {
+	background: -webkit-gradient(linear, 0% 0%, 0% 170%, from(#ffff00), to(#ffee33));
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	padding: 3px;
+	color: #000000;
+
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;	
+}

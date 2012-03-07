@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Rubix Prefences</title>
+	
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/options.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="lib/jquery.js"></script>
+
+	<script type="text/javascript" src="lib/facebox/facebox.js"></script>
+	<link href="lib/facebox/facebox.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="lib/Store.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+</head>
+<body>
+	<div id="options">
+		<form name="prefs" action="#" method="post">
+		<h1>Keyword Finder Prefences</h1>
+		<img src="img/icon_128.png" id="icon" />
+		<div id="content">
+			<p>
+				Add your keyword search list and set other preferences below. All settings are stored locally.
+			</p>
+			<div class="box">
+				<h2>Keywords:</h2>
+				<textarea name="keywords" class="option" style="width: 589px; height: 250px; font-size: 11px;" default=""></textarea>
+				<table>
+					<tr>
+						<td>Keyword list should be <strong>comma delimited</strong>.</td>
+						<td>
+							<!--
+							<select name="keyword_delimiter" class="option">
+								<option value="newline">New Line</option>
+								<option value="tab">Tab</option>
+								<option value="comma">Comma</option>
+							</select>
+							-->
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="box">
+				<h2>Export:</h2>
+				<table>
+					<tr>
+						<td>Bookmark Folder:</td>
+						<td>
+							<select name="bookmark_dir_id" class="option">
+								<option value="" selected="selected">DEFAULT</option>
+								<!-- <option value="new">Create New Folder</option> -->
+							</select>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="box">
+				<h2>Local Cache:</h2>
+				<table>
+					<tr>
+						<td>Clear local cache:</td>
+						<td><a href="#clear_cache" onclick="clear_cache()" class="button">Clear All</a></td>
+					</tr>
+				</table>
+			</div>	
+			<a href="#save" id="options_save" class="button">Update Preferences</a>
+		</div>
+		</form>
+	</div>
+</body>
+</html>
