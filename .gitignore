@@ -5,3 +5,5 @@ tests/log/*
 *~
 .project
 htdocs/acache.php
+*.pem
+*.crx
