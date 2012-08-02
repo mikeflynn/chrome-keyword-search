@@ -16,7 +16,7 @@ function save_options()
 	} else {
 		jQuery.facebox('<span style="color: #990000;">Error saving preferences!</span>');
 	}
-	setTimeout("jQuery.facebox.close();", 2000);
+	setTimeout(jQuery.facebox.close, 2000);
 }
 
 function load_options()
